@@ -7,6 +7,8 @@
 /*цвет нижней строки футера rgba(255, 255, 255, 0.4); */
 /*цвет фона кнопки #F5F4FA */
 /* цвет бордера  #AFB1B8 */
+/* цвет фона иконок rgba(255, 255, 255, 0.1) */
+/* цвет бордера шапки #ECECEC */
 
 :root {
     --primary-text-color: #757575;
@@ -19,6 +21,9 @@
     --footer-sign-color: rgba(255, 255, 255, 0.4);
     --button-bg-color: #F5F4FA;
     --primary-border-color:  #AFB1B8;
+    --background-social-color: rgba(255, 255, 255, 0.1);
+    --header-border-color: #ECECEC;
+
 
 }
 
@@ -95,7 +100,11 @@ a {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid teal;
+    /* outline: 1px solid teal; */
+}
+
+.border {
+    border-bottom: 1px solid var(--header-border-color);
 }
 /* Logo */
 
@@ -387,15 +396,7 @@ a {
 .footer-headline {
     display: flex;
     display: block;
-    padding-top: 48px;
-}
-
-.footer-subject {
-    display: flex;
-}
-
-.footer-content {
-    display: flex;
+    margin-right: 69px;
 }
 
 .footer-logo {
@@ -427,6 +428,37 @@ a {
     line-height: 1.71;
 }
 
+.footer-socials {
+    display: flex;
+}
+
+.footer-socials .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--background-social-color);
+    border-radius: 50%;
+}
+
+.footer-socials .item:hover,
+.footer-socials .item:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-socials .item:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.box {
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--background-social-color);
+}
+
 .footer-link {
     color: var(--footer-text-color);
 }
@@ -437,6 +469,8 @@ a {
 }
 
 .footer-subtitle {
+    margin-top: 0px;
+
     color: var(--white-color);
 
     font-weight: bold;
@@ -445,6 +479,10 @@ a {
 }
 
 .footer-sign {
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+
     color: var(--footer-sign-color);
 
     font-size: 12px;
@@ -493,7 +531,7 @@ a {
 }
 
 .portfolio-navlist .item:not(:last-child) {
-    margin: 8px;
+    margin-right: 8px;
 }
 
 .portfolio-picslist {
@@ -516,6 +554,6 @@ a {
     margin-right: 0px;
 }
 
-/* .portfolio-picslist .item:nth-child(-n +3) {
+.portfolio-picslist .item:nth-last-child(-n +3) {
     margin-bottom: 0px;
-} */
+}
