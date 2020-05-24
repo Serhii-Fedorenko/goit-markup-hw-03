@@ -109,9 +109,6 @@ a {
     /* outline: 1px solid teal; */
 }
 
-.border {
-    border-bottom: 1px solid var(--header-border-color);
-}
 /* Logo */
 
 .logo {
