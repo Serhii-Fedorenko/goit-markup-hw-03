@@ -538,6 +538,10 @@ a {
     padding-left: 24px;
 }
 
+.portfolio-boks {
+    padding-left: 24px;
+}
+
 .portfolio-navlist {
     display: flex;
     justify-content: center;
