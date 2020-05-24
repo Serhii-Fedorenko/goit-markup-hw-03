@@ -91,6 +91,10 @@ a {
 
 /* Header */
 
+.header {
+    border-bottom: 1px solid var(--header-border-color);
+}
+
 .pad {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -127,6 +131,11 @@ a {
 /* Site navigation */
 
 .navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-row {
     display: flex;
     align-items: center;
 }
@@ -527,6 +536,11 @@ a {
     letter-spacing: 0.03em;
 }
 
+.portfolio-box {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
 .portfolio-navlist {
     display: flex;
     justify-content: center;
@@ -546,6 +560,7 @@ a {
 }
 .portfolio-link {
     display: block;
+    width: 370px;
 }
 
 .portfolio-link img {
